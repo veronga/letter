@@ -1,5 +1,5 @@
 import React from "react";
-import "./index";
+import "./style.css";
 
 function InputTheme() {
   return (

@@ -25,6 +25,7 @@ function App() {
         <ButtonAttach />
         <Button />
       </div>
+      <p className="send-message">Отправленные сообщения</p>
     </div>
   );
 }
