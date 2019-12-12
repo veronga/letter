@@ -1,0 +1,15 @@
+.button-box {
+  margin-top: 20px;
+  background: linear-gradient(180deg, #45a6ff 0%, #0055fb 100%), #c4c4c4;
+  border-radius: 5px;
+  width: 140px;
+  height: 40px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+.send-button {
+  font-size: 18px;
+  color: #ffffff;
+  margin: 0;
+}
