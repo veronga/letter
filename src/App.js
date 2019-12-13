@@ -14,13 +14,13 @@ function App() {
       <Logo />
       <div className="main-box">
         <p className="text-mess">Отправлялка сообщений</p>
-        <Text title={"От кого"} />
+        <Text title="От кого" />
         <InputEmail />
-        <Text title={"Кому"} />
+        <Text title="Кому" />
         <InputEmail />
-        <Text title={"Тема письма"} />
+        <Text title="Тема письма" />
         <InputTheme />
-        <Text title={"Сообщение"} />
+        <Text title="Сообщение" />
         <InputMessage />
         <ButtonAttach />
         <Button />
