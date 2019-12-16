@@ -1,0 +1,21 @@
+.cont-send {
+  margin: 0;
+  height: 35px;
+  display: inline-flex;
+}
+
+.color {
+  color: #000;
+}
+
+.mess-shipped {
+  color: #03a100;
+}
+
+.mess-queue {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.mess-error {
+  color: #ff6666;
+}

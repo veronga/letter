@@ -1,0 +1,21 @@
+.cont-mess {
+  margin: 0;
+  height: 35px;
+  border-bottom: 2px solid #dddddd;
+  display: inline-flex;
+}
+.cont-date {
+  width: 120px;
+  height: 25px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.cont-theme {
+  width: 560px;
+  height: 25px;
+  color: rgba(0, 0, 0, 0.6);
+}
+.cont-status {
+  width: 120px;
+  height: 25px;
+  color: rgba(0, 0, 0, 0.6);
+}

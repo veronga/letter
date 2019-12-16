@@ -7,6 +7,8 @@ import InputTheme from "./components/InputTheme/index";
 import InputMessage from "./components/InputMessage/index";
 import ButtonAttach from "./components/ButtonAttach/index";
 import Button from "./components/Button/index";
+import ContainerShipped from "./components/ContainerShipped/index";
+import SendMessage from "./components/SendMessage/index";
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
         <Button />
       </div>
       <p className="send-message">Отправленные сообщения</p>
+      <ContainerShipped />
+      <SendMessage />
     </div>
   );
 }
