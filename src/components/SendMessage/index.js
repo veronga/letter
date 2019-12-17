@@ -1,21 +1,20 @@
 import React from "react";
 import "./style.css";
 
-function SendMessage() {
+function SendMessage({ date, title, status }) {
   return (
     <div className="cont-send">
       <div className="cont-date">
-        <p className="color">23 октября</p>
+        <p className="color">{date}</p>
       </div>
       <div className="cont-theme">
-        <p className="color">
-          Тема письма, которая не поместится в эту строку, потому ч...{" "}
-        </p>
+        <p className="color">{title}</p>
       </div>
       <div className="cont-status">
-        <p className="mess-shipped">Отправлено</p>
+        {status}
+        {/* <p className="mess-shipped">Отправлено</p>
         <p className="mess-queue">В очереди</p>
-        <p className="mess-error">Ошибка</p>
+        <p className="mess-error">Ошибка</p> */}
       </div>
     </div>
   );

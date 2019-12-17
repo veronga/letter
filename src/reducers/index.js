@@ -1,8 +1,8 @@
 import { combineReducers } from "redux";
-import CarsReducers from "./car";
+import lettersReducers from "./letters";
 
 const allReducers = combineReducers({
-  cars: CarsReducers
+  letters: lettersReducers
 });
 
 export default allReducers;
