@@ -5,7 +5,7 @@ import SendMessage from "../components/SendMessage";
 class LetterList extends React.Component {
   render() {
     const { letters } = this.props;
-    // console.log(this.props);
+
     return (
       <Fragment>
         {letters.map(item => {

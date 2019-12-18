@@ -25,3 +25,36 @@
   color: #000000;
   margin-left: -440px;
 }
+
+.association-input {
+  display: inline-flex;
+}
+
+.input-cont-left {
+  margin-left: 30px;
+  width: 360px;
+  height: 40px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.input-cont-right {
+  width: 360px;
+  height: 40px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.input-box {
+  margin-left: 30px;
+  width: 740px;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.message-box {
+  margin-left: 30px;
+  width: 740px;
+  height: 140px;
+  border-radius: 5px;
+}
