@@ -19,7 +19,8 @@ class App extends Component {
       emailSender: "",
       emailRecipient: "",
       theme: "",
-      message: ""
+      message: "",
+      error: ""
     };
   }
 
@@ -34,15 +35,34 @@ class App extends Component {
   };
 
   sendingMessage = () => {
-    this.props.sendMessageAction({
-      date: new Date().toLocaleString(),
-      title: this.state.theme,
-      status: "done"
-    });
+    const {
+      nameSender,
+      nameRecipient,
+      emailSender,
+      emailRecipient,
+      theme
+    } = this.state;
+    if (nameSender === "") {
+      this.setState({ error: "Пожалуйста введите имя " });
+    } else if (emailSender === "") {
+      this.setState({ error: "Email не может быть пустым" });
+    } else if (nameRecipient === "") {
+      this.setState({ error: "Пожалуйста введите имя получателя" });
+    } else if (emailRecipient === "") {
+      this.setState({ error: "Email получателя не может быть пустым" });
+    } else if (theme === "") {
+      this.setState({ error: "Введите тему письма" });
+    } else {
+      this.props.sendMessageAction({
+        date: new Date().toLocaleDateString(),
+        title: this.state.theme,
+        status: "done"
+      });
+    }
   };
 
   render() {
-    // console.log(this.sendingMessage);
+    console.log(this.state);
     return (
       <div className="contener">
         <Logo />
@@ -99,10 +119,10 @@ class App extends Component {
             type="textarea"
           />
           <Button onClick={this.sendingMessage} />
+          <span className="text-error">{this.state.error}</span>
         </div>
-        <p className="send-message">Отправленные сообщения</p>
+        <span className="send-message">Отправленные сообщения</span>
         <ContainerShipped />
-        {/* <SendMessage /> */}
         <LetterList />
       </div>
     );

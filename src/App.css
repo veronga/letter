@@ -58,3 +58,11 @@
   height: 140px;
   border-radius: 5px;
 }
+
+.text-error {
+  display: inline-block;
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #ff6666;
+}
