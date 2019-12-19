@@ -4,12 +4,12 @@ import classNames from "classnames";
 import "./style.css";
 
 export default function Input(props) {
-  const { placeholder, inputStyle, value, onChange, name } = props;
+  const { placeholder, inputStyle, value, onChange, name, type } = props;
   const inputClass = classNames(inputStyle, "input");
 
   return (
     <input
-      type="text"
+      type={type || "text"}
       name={name}
       placeholder={placeholder}
       value={value}

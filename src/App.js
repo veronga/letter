@@ -4,7 +4,6 @@ import { connect } from "react-redux";
 import "./App.css";
 import Logo from "./components/Logo";
 import Text from "./components/Text";
-import ButtonAttach from "./components/ButtonAttach";
 import Button from "./components/Button";
 import ContainerShipped from "./components/ContainerShipped";
 import LetterList from "./containers/LetterList";
@@ -34,8 +33,16 @@ class App extends Component {
     });
   };
 
+  sendingMessage = () => {
+    this.props.sendMessageAction({
+      date: new Date().toLocaleString(),
+      title: this.state.theme,
+      status: "done"
+    });
+  };
+
   render() {
-    console.log(this.state);
+    // console.log(this.sendingMessage);
     return (
       <div className="contener">
         <Logo />
@@ -89,9 +96,9 @@ class App extends Component {
             value={this.state.message}
             onChange={this.handleInputChange}
             name="message"
+            type="textarea"
           />
-          <ButtonAttach />
-          <Button />
+          <Button onClick={this.sendingMessage} />
         </div>
         <p className="send-message">Отправленные сообщения</p>
         <ContainerShipped />
