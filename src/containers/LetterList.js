@@ -4,7 +4,7 @@ import SendMessage from "../components/SendMessage";
 
 class LetterList extends React.Component {
   render() {
-    const { letters } = this.props;
+    const { letters, delMessageAction } = this.props;
 
     return (
       <Fragment>
@@ -14,6 +14,7 @@ class LetterList extends React.Component {
               date={item.date}
               title={item.title}
               status={item.status}
+              delMessageAction={delMessageAction}
             />
           );
         })}

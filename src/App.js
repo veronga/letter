@@ -8,6 +8,7 @@ import Button from "./components/Button";
 import ContainerShipped from "./components/ContainerShipped";
 import LetterList from "./containers/LetterList";
 import { sendMessage } from "./actions";
+import { delMessage } from "./actions";
 import Input from "./components/Input";
 
 class App extends Component {
@@ -62,7 +63,7 @@ class App extends Component {
   };
 
   render() {
-    console.log(this.state);
+    // console.log();
     return (
       <div className="contener">
         <Logo />
@@ -123,7 +124,7 @@ class App extends Component {
         </div>
         <span className="send-message">Отправленные сообщения</span>
         <ContainerShipped />
-        <LetterList />
+        <LetterList delMessageAction={this.props.delMessageAction} />
       </div>
     );
   }
@@ -131,7 +132,8 @@ class App extends Component {
 
 function mapDispatchToProps(dispatch) {
   return {
-    sendMessageAction: bindActionCreators(sendMessage, dispatch)
+    sendMessageAction: bindActionCreators(sendMessage, dispatch),
+    delMessageAction: bindActionCreators(delMessage, dispatch)
   };
 }
 

@@ -1,7 +1,8 @@
 import React from "react";
 import "./style.css";
+import ButtonDelete from "../ButtonDelete";
 
-function SendMessage({ date, title, status }) {
+function SendMessage({ date, title, status, delMessageAction }) {
   return (
     <div className="cont-send">
       <div className="cont-date">
@@ -16,6 +17,7 @@ function SendMessage({ date, title, status }) {
         <p className="mess-queue">В очереди</p>
         <p className="mess-error">Ошибка</p> */}
       </div>
+      <ButtonDelete delMessageAction={delMessageAction} />
     </div>
   );
 }

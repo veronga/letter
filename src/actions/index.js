@@ -4,3 +4,10 @@ export function sendMessage(payload) {
     payload
   };
 }
+
+export function delMessage(payload) {
+  return {
+    type: "DELETE_MESSAGE",
+    payload
+  };
+}
