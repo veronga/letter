@@ -17,7 +17,7 @@ function SendMessage({ date, title, status, delMessageAction }) {
         <p className="mess-queue">В очереди</p>
         <p className="mess-error">Ошибка</p> */}
       </div>
-      <ButtonDelete delMessageAction={delMessageAction} />
+      <ButtonDelete delMessageAction={delMessageAction} title={title} />
     </div>
   );
 }
