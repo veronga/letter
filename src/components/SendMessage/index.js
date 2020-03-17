@@ -13,9 +13,7 @@ function SendMessage({ date, title, status, delMessageAction }) {
       </div>
       <div className="cont-status">
         {status}
-        {/* <p className="mess-shipped">Отправлено</p>
-        <p className="mess-queue">В очереди</p>
-        <p className="mess-error">Ошибка</p> */}
+        <p className="mess-shipped">Отправлено</p>
       </div>
       <ButtonDelete delMessageAction={delMessageAction} title={title} />
     </div>

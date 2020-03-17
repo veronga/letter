@@ -57,7 +57,7 @@ class App extends Component {
       this.props.sendMessageAction({
         date: new Date().toLocaleDateString(),
         title: this.state.theme,
-        status: "done"
+        status: ""
       });
       this.setState({
         nameSender: "",
