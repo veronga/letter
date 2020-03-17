@@ -1,21 +1,22 @@
 .cont-mess {
   margin: 0;
   height: 35px;
-  border-bottom: 2px solid #dddddd;
+  width: 64%;
+  border-bottom: 2px solid #ecdbd3;
   display: inline-flex;
 }
 .cont-date {
   width: 120px;
   height: 25px;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(2, 46, 42, 0.877);
 }
 .cont-theme {
   width: 560px;
   height: 25px;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(2, 46, 42, 0.877);
 }
 .cont-status {
   width: 120px;
   height: 25px;
-  color: rgba(0, 0, 0, 0.6);
+  color: rgba(2, 46, 42, 0.877);
 }

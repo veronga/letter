@@ -7,7 +7,7 @@
 .main-box {
   width: 800px;
   margin-top: 20px;
-  background-color: #ffffff;
+  background-color: #f8f5faf1;
   border-radius: 5px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
@@ -15,15 +15,14 @@
 .text-mess {
   font-size: 30px;
   line-height: 40px;
-  color: #000000;
+  color: #eb3d3d;
   margin-left: 30px;
 }
 
 .send-message {
   font-size: 30px;
   line-height: 40px;
-  color: #000000;
-  margin-left: -440px;
+  color: #08726d;
   margin-top: 30px;
 }
 
