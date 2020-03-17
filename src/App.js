@@ -44,7 +44,7 @@ class App extends Component {
       theme
     } = this.state;
     if (nameSender === "") {
-      this.setState({ error: "Пожалуйста введите имя " });
+      this.setState({ error: "Пожалуйста введите имя" });
     } else if (emailSender === "") {
       this.setState({ error: "Email не может быть пустым" });
     } else if (nameRecipient === "") {
@@ -59,11 +59,20 @@ class App extends Component {
         title: this.state.theme,
         status: "done"
       });
+      this.setState({
+        nameSender: "",
+        nameRecipient: "",
+        emailSender: "",
+        emailRecipient: "",
+        theme: "",
+        message: "",
+        error: ""
+      });
     }
   };
 
   render() {
-    // console.log();
+    console.log(this.props);
     return (
       <div className="contener">
         <Logo />
